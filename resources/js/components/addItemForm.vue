@@ -1,10 +1,10 @@
 <template>
   <div class="addItem">
-      <input type="text" class="input" placeholder="Add Todo" v-model="item.name"> 
+      <input type="text" class="input" placeholder="Add Todo" v-model="item.name">
       <button class="addButton">
-          <font-awesome-icon
+        <font-awesome-icon
           icon="plus"
-          class="plus" 
+          class="plus"
           @click="addItem()"/>
       </button>
   </div>
@@ -19,7 +19,6 @@ export default {
             }
         }
     },
-
     methods: {
         addItem() {
           if(this.item.name !== '') {

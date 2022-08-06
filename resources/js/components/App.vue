@@ -16,7 +16,7 @@ import listView from './listView.vue'
      components: {
          addItemForm,
          listView
-     }   
+     }
     }
 </script>
 <style scoped>

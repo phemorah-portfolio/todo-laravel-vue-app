@@ -11,12 +11,13 @@
 </template>
 
 <script>
+
 import listItem from './listItem'
-import ListItem from './listItem.vue'
+// import ListItem from './listItem.vue'
 export default {
     components: {
         listItem,
-        ListItem
+        // ListItem
     },
     data: function() {
         return {
@@ -28,6 +29,7 @@ export default {
             axios.get('api/todos').then(response => {
                 if(response.status === 200) {
                     this.items = response.data.todos
+                    this.$emit('reloadTodos')
                 }
             })
         }
